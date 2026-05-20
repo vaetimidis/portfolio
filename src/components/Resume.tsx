@@ -161,7 +161,7 @@ export default function Resume() {
 
                     <div className="flex flex-col">
                       <span className="text-[13px] font-medium text-[#37352f]/50">
-                        Citizenship
+                        {t.personal.citizenshipTitle}
                       </span>
                       <span>{t.personal.citizenship}</span>
                     </div>
