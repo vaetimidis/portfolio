@@ -1,0 +1,8 @@
+{
+  "name": "Portfolio Maxim Prytkov",
+  "description": "Minimalist resume website for Maxim Prytkov inspired by hh.ru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
