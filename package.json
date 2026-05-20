@@ -1,5 +1,5 @@
 {
-  "name": "react-example",
+  "name": "portfolio",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -7,7 +7,7 @@
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
-    "clean": "rm -rf dist server.js",
+    "clean": "rm -rf dist docs server.js",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^9.0.0",
     "@eslint-react/eslint-plugin": "^5.8.3",
+    "@types/node": "^22.14.0",
     "@types/react": "^19.2.15",
     "esbuild": "^0.25.0",
     "eslint": "^10.4.0",
