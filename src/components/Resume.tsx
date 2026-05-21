@@ -134,45 +134,42 @@ export default function Resume() {
             </div>
 
             <aside className="bg-[#f1f1ef] px-4 py-4 rounded-[4px] text-[15px] leading-relaxed lg:sticky lg:top-8 border border-[#37352f]/6">
-              <div className="flex items-start gap-3.5">
-                <div className="text-xl leading-none mt-0.5 select-none">💡</div>
-                <div className="flex-1 w-full min-w-0">
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-y-3 gap-x-6 text-[#37352f]">
-                    <div className="flex flex-col">
-                      <span className="text-[13px] font-medium text-[#37352f]/50">
-                        {t.position.specializationsTitle.replace(':', '')}
-                      </span>
-                      <span>{t.position.specializations}</span>
-                    </div>
-
-                    <div className="flex flex-col">
-                      <span className="text-[13px] font-medium text-[#37352f]/50">
-                        {t.position.employmentTitle.replace(':', '')}
-                      </span>
-                      <span>{t.position.employment}</span>
-                    </div>
-
-                    <div className="flex flex-col">
-                      <span className="text-[13px] font-medium text-[#37352f]/50">
-                        {t.position.formatTitle.replace(':', '')}
-                      </span>
-                      <span>{t.position.format}</span>
-                    </div>
-
-                    <div className="flex flex-col">
-                      <span className="text-[13px] font-medium text-[#37352f]/50">
-                        {t.personal.citizenshipTitle}
-                      </span>
-                      <span>{t.personal.citizenship}</span>
-                    </div>
-                  </div>
-
-                  <div className="mt-4 pt-4 border-t border-[#37352f]/10">
-                    <span className="text-[#37352f]/70 text-[14px] flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#f59e0b] shrink-0" />
-                      {t.personal.relocate}
+              <div className="w-full min-w-0 pl-[2px] sm:pl-0">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-y-3 gap-x-6 text-[#37352f]">
+                  <div className="flex flex-col min-w-0">
+                    <span className="text-[13px] font-medium text-[#37352f]/50">
+                      {t.position.specializationsTitle.replace(':', '')}
                     </span>
+                    <span className="break-words text-pretty">{t.position.specializations}</span>
                   </div>
+
+                  <div className="flex flex-col min-w-0">
+                    <span className="text-[13px] font-medium text-[#37352f]/50">
+                      {t.position.employmentTitle.replace(':', '')}
+                    </span>
+                    <span className="break-words text-pretty">{t.position.employment}</span>
+                  </div>
+
+                  <div className="flex flex-col min-w-0">
+                    <span className="text-[13px] font-medium text-[#37352f]/50">
+                      {t.position.formatTitle.replace(':', '')}
+                    </span>
+                    <span className="break-words text-pretty">{t.position.format}</span>
+                  </div>
+
+                  <div className="flex flex-col min-w-0">
+                    <span className="text-[13px] font-medium text-[#37352f]/50">
+                      {t.personal.citizenshipTitle}
+                    </span>
+                    <span className="break-words text-pretty">{t.personal.citizenship}</span>
+                  </div>
+                </div>
+
+                <div className="mt-4 pt-4 border-t border-[#37352f]/10">
+                  <span className="text-[#37352f]/70 text-[14px] flex items-center gap-1.5 break-words text-pretty">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#f59e0b] shrink-0" />
+                    {t.personal.relocate}
+                  </span>
                 </div>
               </div>
             </aside>
@@ -288,63 +285,63 @@ export default function Resume() {
 
         <hr className="border-[#37352f]/10 mb-8" />
 
-        <div className="grid gap-6 md:gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-12 xl:gap-16 items-start">
-          <section className="min-w-0">
+        <div className="grid gap-6 md:gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-12 xl:gap-16 items-stretch">
+          <section className="min-w-0 h-full flex flex-col">
             <div className="flex items-center gap-2 mb-4 group cursor-default">
               <ChevronRight className="w-5 h-5 text-[#37352f] transition-transform rounded" />
               <h2 className="text-xl font-bold">{t.education.title}</h2>
             </div>
 
-            <div className="rounded-[4px] border border-[#37352f]/10 bg-[#fafaf9] px-4 sm:px-5 py-4 sm:py-5 h-full">
-              <div className="flex flex-wrap items-center gap-2 text-[15px] mb-2">
+            <div className="rounded-[4px] border border-[#37352f]/10 bg-[#fafaf9] px-4 sm:px-5 py-4 sm:py-5 h-full flex flex-col">
+              <div className="flex flex-wrap items-center gap-2 text-[15px] mb-2 min-w-0">
                 <GraduationCap className="w-4 h-4 text-[#37352f]/50 shrink-0" />
-                <span className="font-medium">{t.education.level}</span>
-                <span className="text-[#37352f]/50 bg-[#37352f]/5 px-1.5 rounded-sm text-sm">
+                <span className="font-medium break-words">{t.education.level}</span>
+                <span className="text-[#37352f]/50 bg-[#37352f]/5 px-1.5 rounded-sm text-sm shrink-0">
                   {t.education.year}
                 </span>
               </div>
 
-              <div className="text-[14px] font-medium text-[#37352f] mb-1 leading-snug max-w-[52ch] break-words">
+              <div className="text-[14px] font-medium text-[#37352f] mb-1 leading-snug max-w-[52ch] break-words text-pretty min-w-0">
                 {t.education.institution}
               </div>
 
-              <div className="text-[14px] text-[#37352f]/60 leading-snug max-w-[52ch] break-words">
+              <div className="text-[14px] text-[#37352f]/60 leading-snug max-w-[52ch] break-words text-pretty min-w-0">
                 {t.education.faculty}
               </div>
             </div>
           </section>
 
-          <section className="min-w-0">
+          <section className="min-w-0 h-full flex flex-col">
             <div className="flex items-center gap-2 mb-4 group cursor-default">
               <ChevronRight className="w-5 h-5 text-[#37352f] transition-transform rounded" />
               <h2 className="text-xl font-bold">{t.skills.title}</h2>
             </div>
 
-            <div className="grid gap-4 md:gap-5 xl:grid-cols-[260px_minmax(0,1fr)] xl:items-stretch">
-              <div className="rounded-[4px] border border-[#37352f]/10 bg-[#fafaf9] px-4 sm:px-5 py-4 sm:py-5 h-full">
+            <div className="grid gap-4 md:gap-5 xl:grid-cols-[260px_minmax(0,1fr)] xl:items-stretch h-full">
+              <div className="rounded-[4px] border border-[#37352f]/10 bg-[#fafaf9] px-4 sm:px-5 py-4 sm:py-5 h-full flex flex-col min-w-0">
                 <h3 className="text-[13px] font-semibold text-[#37352f]/50 uppercase tracking-widest mb-2 flex items-center gap-1.5">
                   <Globe2 className="w-3.5 h-3.5 shrink-0" />
                   {t.skills.languagesTitle}
                 </h3>
 
-                <ul className="text-[14px] text-[#37352f]/80 space-y-1 border-l-2 border-[#37352f]/10 pl-3">
+                <ul className="text-[14px] text-[#37352f]/80 space-y-1 border-l-2 border-[#37352f]/10 pl-3 min-w-0">
                   {t.skills.languages.map((lang, idx) => (
-                    <li key={idx}>{lang}</li>
+                    <li key={idx} className="break-words text-pretty">{lang}</li>
                   ))}
                 </ul>
               </div>
 
-              <div className="rounded-[4px] border border-[#37352f]/10 bg-[#fafaf9] px-4 sm:px-5 py-4 sm:py-5 h-full">
+              <div className="rounded-[4px] border border-[#37352f]/10 bg-[#fafaf9] px-4 sm:px-5 py-4 sm:py-5 h-full flex flex-col min-w-0">
                 <h3 className="text-[13px] font-semibold text-[#37352f]/50 uppercase tracking-widest mb-3 flex items-center gap-1.5">
                   <Code2 className="w-3.5 h-3.5 shrink-0" />
                   {t.skills.stackTitle}
                 </h3>
 
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-1.5 content-start">
                   {t.skills.stack.map((skill, idx) => (
                     <span
                       key={idx}
-                      className="bg-[#f0f0f0] text-[#37352f] text-[13px] rounded-[3px] px-1.5 py-0.5 leading-tight hover:bg-[#e4e4e4] transition-colors cursor-default"
+                      className="bg-[#f0f0f0] text-[#37352f] text-[13px] rounded-[3px] px-1.5 py-0.5 leading-tight hover:bg-[#e4e4e4] transition-colors cursor-default break-words max-w-full"
                     >
                       {skill}
                     </span>
